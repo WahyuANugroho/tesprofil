@@ -1,0 +1,26 @@
+/* src/assets/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Style untuk animasi scroll yang akan kita pakai nanti */
+.before-enter {
+opacity: 0;
+transform: translateY(100px);
+transition: all 1s ease-out;
+}
+.enter {
+opacity: 1;
+transform: translateY(0px);
+}
+html {
+  scroll-behavior: smooth
+}
+
+@layer utilities {
+  .futuristic-grid {
+    background-image:
+      linear-gradient(45deg, rgba(88, 166, 255, 0.1) 1px, transparent 0),
+      linear-gradient(-45deg, rgba(88, 166, 255, 0.1) 1px, transparent 0);
+    background-size: 50px 50px;
+  }
+}
